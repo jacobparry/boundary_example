@@ -8,7 +8,6 @@ defmodule Api.Umbrella.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       elixirc_options: [warnings_as_errors: true],
-      compilers: [:boundary] ++ Mix.compilers(),
       aliases: aliases()
     ]
   end

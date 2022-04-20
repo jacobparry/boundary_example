@@ -12,7 +12,7 @@ defmodule Db do
       :world
 
   """
-  use Boundary, deps: [], exports: []
+  use Boundary, exports: [{Schemas, []}]
 
   def hello do
     :world

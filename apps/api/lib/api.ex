@@ -11,6 +11,7 @@ defmodule Api do
 alias Db
 
   def test do
-    _user = %Db.Schemas.User{}
+    _user = %Db.Schemas.Example{}
+    :ok
   end
 end
