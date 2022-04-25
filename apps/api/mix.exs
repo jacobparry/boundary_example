@@ -16,6 +16,7 @@ defmodule Api.MixProject do
       aliases: aliases(),
       deps: deps(),
       compilers: [:boundary] ++ Mix.compilers(),
+      boundary: boundary()
     ]
   end
 
@@ -38,10 +39,10 @@ defmodule Api.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:boundary, "~> 0.9.2"},
+      # {:boundary, "~> 0.9.2"},
+      {:boundary, git: "https://github.com/sasa1977/boundary.git", branch: "fix-caching"},
       {:phoenix_pubsub, "~> 2.0"},
       {:db, in_umbrella: true}
-
     ]
   end
 
@@ -51,6 +52,14 @@ defmodule Api.MixProject do
   defp aliases do
     [
       setup: ["deps.get"]
+    ]
+  end
+
+  defp boundary do
+    [
+      default: [
+        # type: :strict
+      ]
     ]
   end
 end

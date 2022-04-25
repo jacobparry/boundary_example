@@ -8,8 +8,6 @@ defmodule Api do
   """
   use Boundary, deps: [Db], exports: []
 
-alias Db
-
   def test do
     _user = %Db.Schemas.Example{}
     :ok
