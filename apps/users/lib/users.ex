@@ -12,7 +12,7 @@ defmodule Users do
       :world
 
   """
-  use Boundary, deps: [], exports: []
+  use Boundary, deps: [], exports: [], type: :strict
 
   def hello do
     _user = %Db.Schemas.Example{}

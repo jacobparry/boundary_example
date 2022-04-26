@@ -12,8 +12,8 @@ defmodule Users.MixProject do
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      compilers: [:boundary] ++ Mix.compilers(),
-      boundary: boundary()
+      compilers: [:boundary] ++ Mix.compilers()
+      # boundary: boundary()
 
     ]
   end
@@ -39,11 +39,10 @@ defmodule Users.MixProject do
     ]
   end
 
-  defp boundary do
-    [
-      default: [
-        type: :strict
-      ]
-    ]
-  end
+  # defp boundary do
+  #   [
+  #     default: [
+  #     ]
+  #   ]
+  # end
 end
