@@ -19,6 +19,15 @@ config :api_web, ApiWeb.Endpoint,
   pubsub_server: Api.PubSub,
   live_view: [signing_salt: "qwtuDlpP"]
 
+config :boundary,
+  umbrella_apps: [
+    apps: [
+      :api,
+      :db,
+      :users
+    ]
+  ]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
