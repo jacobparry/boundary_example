@@ -10,4 +10,11 @@ defmodule Api.Types.Generic do
       }
     end
   end
+
+  # Boundary will alert.
+  def convert_to_generic_thing2(thing) do
+    %Users.Types.Generic{
+      text: thing.text
+    }
+  end
 end
