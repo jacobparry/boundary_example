@@ -14,7 +14,6 @@ defmodule Users.MixProject do
       deps: deps(),
       compilers: [:boundary] ++ Mix.compilers()
       # boundary: boundary()
-
     ]
   end
 

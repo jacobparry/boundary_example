@@ -13,7 +13,7 @@ defmodule Db.MixProject do
       elixirc_options: [warnings_as_errors: true],
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      compilers: [:boundary] ++ Mix.compilers(),
+      compilers: [:boundary] ++ Mix.compilers()
     ]
   end
 
